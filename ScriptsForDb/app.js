@@ -49,8 +49,8 @@ db.serialize(function() {
                 phone: faker.phone.phoneNumberFormat(),
                 website: faker.internet.domainName(),
                 address: faker.address.streetAddress(),
-                locationLat: faker.random.number({min: 100000, max: 999999}),
-                locationLng: faker.random.number({min: 100000, max: 999999})
+                locationLat: faker.address.latitude(),
+                locationLng: faker.address.longitude()
             };
 
             var newHh = {
